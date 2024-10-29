@@ -11,6 +11,8 @@
 		49B67ADE2CD013A800E0ADA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B67ADD2CD013A800E0ADA6 /* ContentView.swift */; };
 		49B67AE02CD013A900E0ADA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B67ADF2CD013A900E0ADA6 /* Assets.xcassets */; };
 		49B67AE32CD013A900E0ADA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B67AE22CD013A900E0ADA6 /* Preview Assets.xcassets */; };
+		49B67AED2CD0157A00E0ADA6 /* TimerCounterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B67AEC2CD0157A00E0ADA6 /* TimerCounterButton.swift */; };
+		49B67AF02CD16E0400E0ADA6 /* NumberCounterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B67AEF2CD16E0400E0ADA6 /* NumberCounterButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		49B67ADD2CD013A800E0ADA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49B67ADF2CD013A900E0ADA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49B67AE22CD013A900E0ADA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49B67AEC2CD0157A00E0ADA6 /* TimerCounterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCounterButton.swift; sourceTree = "<group>"; };
+		49B67AEF2CD16E0400E0ADA6 /* NumberCounterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCounterButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				49B67ADB2CD013A800E0ADA6 /* TabataApp.swift */,
 				49B67ADD2CD013A800E0ADA6 /* ContentView.swift */,
+				49B67AEC2CD0157A00E0ADA6 /* TimerCounterButton.swift */,
+				49B67AEF2CD16E0400E0ADA6 /* NumberCounterButton.swift */,
 				49B67ADF2CD013A900E0ADA6 /* Assets.xcassets */,
 				49B67AE12CD013A900E0ADA6 /* Preview Content */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				49B67ADE2CD013A800E0ADA6 /* ContentView.swift in Sources */,
+				49B67AF02CD16E0400E0ADA6 /* NumberCounterButton.swift in Sources */,
+				49B67AED2CD0157A00E0ADA6 /* TimerCounterButton.swift in Sources */,
 				49B67ADC2CD013A800E0ADA6 /* TabataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
