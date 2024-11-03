@@ -14,52 +14,10 @@ struct TimerCounterButton: View {
     var step: Int = 5
     
     var body: some View {
-        VStack {
-            Text(title)
-                .bold()
-                .font(.title3)
-                .foregroundColor(.white)
-            
-            HStack {
-                Button(action: {
-                    if (value > minValue) {
-                        value -= step
-                    }
-                }) {
-                    ZStack {
-                        Circle()
-                            .frame(width: 28)
-                            .foregroundColor(.purple)
-                        Image(systemName: "minus")
-                            .scaledToFit()
-                            .foregroundColor(.white)
-                    }
-                }
-                Text("\(formatTime(value: value))")
-                    .bold()
-                    .font(.title2)
-                    .foregroundColor(.white)
-                Button(action: {
-                    value += step
-                }) {
-                    ZStack {
-                        Circle()
-                            .frame(width: 28)
-                            .foregroundColor(.purple)
-                        Image(systemName: "plus")
-                            .scaledToFit()
-                            .foregroundColor(.white)
-                    }
-                }
-                
-            }
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.indigo)
-        .cornerRadius(12)
+        BaseCounterButton(value: $value, title: title, minValue: minValue, step: step, format: formatTime)
     }
     
-    func formatTime(value: Int) -> String {
+    private func formatTime(value: Int) -> String {
         let minutes = value / 60
         let seconds = value % 60
         return String(format: "%02d:%02d", minutes, seconds)
