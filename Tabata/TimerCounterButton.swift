@@ -9,12 +9,13 @@ import SwiftUI
 
 struct TimerCounterButton: View {
     @Binding var value: Int
+    let color: Color
     let title: String
     var minValue: Int = 5
     var step: Int = 5
     
     var body: some View {
-        BaseCounterButton(value: $value, title: title, minValue: minValue, step: step, format: formatTime)
+        BaseCounterButton(value: $value, color: color, title: title, minValue: minValue, step: step, format: formatTime)
     }
     
     private func formatTime(value: Int) -> String {
@@ -25,5 +26,5 @@ struct TimerCounterButton: View {
 }
 
 #Preview {
-    TimerCounterButton(value: .constant(40), title: "Work")
+    TimerCounterButton(value: .constant(40), color: Color(AppColor.green.rawValue), title: "Work")
 }

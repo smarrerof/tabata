@@ -14,8 +14,11 @@
 		49B67AED2CD0157A00E0ADA6 /* TimerCounterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B67AEC2CD0157A00E0ADA6 /* TimerCounterButton.swift */; };
 		49B67AF02CD16E0400E0ADA6 /* NumberCounterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B67AEF2CD16E0400E0ADA6 /* NumberCounterButton.swift */; };
 		49B67AF22CD1707900E0ADA6 /* BaseCounterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B67AF12CD1707900E0ADA6 /* BaseCounterButton.swift */; };
-		49B67AF42CD693C700E0ADA6 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B67AF32CD693C700E0ADA6 /* TimerView.swift */; };
+		49B67AF42CD693C700E0ADA6 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B67AF32CD693C700E0ADA6 /* StopWatch.swift */; };
 		49B67AF62CD7FBDE00E0ADA6 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B67AF52CD7FBDE00E0ADA6 /* CircleButton.swift */; };
+		49B67AF92CE3CF4B00E0ADA6 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B67AF82CE3CF4B00E0ADA6 /* Workout.swift */; };
+		49B67AFB2CE3D05B00E0ADA6 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B67AFA2CE3D05B00E0ADA6 /* WorkoutView.swift */; };
+		49B67B002CE6632900E0ADA6 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B67AFF2CE6632900E0ADA6 /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +30,11 @@
 		49B67AEC2CD0157A00E0ADA6 /* TimerCounterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCounterButton.swift; sourceTree = "<group>"; };
 		49B67AEF2CD16E0400E0ADA6 /* NumberCounterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCounterButton.swift; sourceTree = "<group>"; };
 		49B67AF12CD1707900E0ADA6 /* BaseCounterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCounterButton.swift; sourceTree = "<group>"; };
-		49B67AF32CD693C700E0ADA6 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		49B67AF32CD693C700E0ADA6 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 		49B67AF52CD7FBDE00E0ADA6 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		49B67AF82CE3CF4B00E0ADA6 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		49B67AFA2CE3D05B00E0ADA6 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		49B67AFF2CE6632900E0ADA6 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +67,14 @@
 		49B67ADA2CD013A800E0ADA6 /* Tabata */ = {
 			isa = PBXGroup;
 			children = (
+				49B67AF72CE3CF3E00E0ADA6 /* Models */,
 				49B67ADB2CD013A800E0ADA6 /* TabataApp.swift */,
 				49B67ADD2CD013A800E0ADA6 /* HomeView.swift */,
+				49B67AFA2CE3D05B00E0ADA6 /* WorkoutView.swift */,
+				49B67AF32CD693C700E0ADA6 /* StopWatch.swift */,
 				49B67AF12CD1707900E0ADA6 /* BaseCounterButton.swift */,
 				49B67AEC2CD0157A00E0ADA6 /* TimerCounterButton.swift */,
 				49B67AEF2CD16E0400E0ADA6 /* NumberCounterButton.swift */,
-				49B67AF32CD693C700E0ADA6 /* TimerView.swift */,
 				49B67AF52CD7FBDE00E0ADA6 /* CircleButton.swift */,
 				49B67ADF2CD013A900E0ADA6 /* Assets.xcassets */,
 				49B67AE12CD013A900E0ADA6 /* Preview Content */,
@@ -80,6 +88,15 @@
 				49B67AE22CD013A900E0ADA6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49B67AF72CE3CF3E00E0ADA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49B67AF82CE3CF4B00E0ADA6 /* Workout.swift */,
+				49B67AFF2CE6632900E0ADA6 /* AppColor.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,9 +172,12 @@
 				49B67AF62CD7FBDE00E0ADA6 /* CircleButton.swift in Sources */,
 				49B67ADE2CD013A800E0ADA6 /* HomeView.swift in Sources */,
 				49B67AF02CD16E0400E0ADA6 /* NumberCounterButton.swift in Sources */,
+				49B67AF92CE3CF4B00E0ADA6 /* Workout.swift in Sources */,
+				49B67AFB2CE3D05B00E0ADA6 /* WorkoutView.swift in Sources */,
 				49B67AF22CD1707900E0ADA6 /* BaseCounterButton.swift in Sources */,
-				49B67AF42CD693C700E0ADA6 /* TimerView.swift in Sources */,
+				49B67AF42CD693C700E0ADA6 /* StopWatch.swift in Sources */,
 				49B67AED2CD0157A00E0ADA6 /* TimerCounterButton.swift in Sources */,
+				49B67B002CE6632900E0ADA6 /* AppColor.swift in Sources */,
 				49B67ADC2CD013A800E0ADA6 /* TabataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

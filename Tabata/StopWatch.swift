@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TimerView: View {
+struct StopWatch: View {
     let backgroundColor: Color
     let totalTime: Int
     let labelText: String
@@ -115,5 +115,5 @@ struct WorkoutCard: View {
 }
 
 #Preview {
-    TimerView(backgroundColor: .red, totalTime: 10, labelText: "Work")
+    StopWatch(backgroundColor: .red, totalTime: 40, labelText: "Work")
 }

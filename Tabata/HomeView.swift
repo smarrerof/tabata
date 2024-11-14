@@ -18,16 +18,25 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                NumberCounterButton(value: $rounds, title: "Rounds")
+                NumberCounterButton(value: $rounds, 
+                                    color: Color(AppColor.cyan.rawValue),
+                                    title: "Rounds")
                     .frame(maxHeight: maxHeight)
-                NumberCounterButton(value: $exercises, title: "Exercises")
+                NumberCounterButton(value: $exercises,
+                                    color: Color(AppColor.cyan.rawValue),
+                                    title: "Exercises")
                     .frame(maxHeight: maxHeight)
-                HStack {
-                    TimerCounterButton(value: $work, title: "Work")
-                    TimerCounterButton(value: $rest, title: "Rest")
-                }.frame(maxHeight: maxHeight)
+                TimerCounterButton(value: $work,
+                                   color: Color(AppColor.green.rawValue),
+                                   title: "Work")
+                    .frame(maxHeight: maxHeight)
+                TimerCounterButton(value: $rest,
+                                   color: Color(AppColor.red.rawValue),
+                                   title: "Rest")
+                    .frame(maxHeight: maxHeight)
                 Spacer()
-                NavigationLink(destination: { EmptyView() }) {
+                NavigationLink(destination: { WorkoutView(workout: Workout(warmUp: 30, rounds: rounds,exercises: exercises, work: work, rest: rest, coolDown: 30))
+                }) {
                     Text("Start")
                         .foregroundColor(.white)
                         .font(.title2)
